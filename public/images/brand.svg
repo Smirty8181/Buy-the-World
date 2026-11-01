@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 82" fill="none">
+  <defs>
+    <linearGradient id="coin" x1="7" y1="8" x2="75" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f0d7a0"/>
+      <stop offset="1" stop-color="#b88d4c"/>
+    </linearGradient>
+    <linearGradient id="globe" x1="14" y1="19" x2="67" y2="65" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34445a"/>
+      <stop offset="1" stop-color="#171f2b"/>
+    </linearGradient>
+  </defs>
+  <circle cx="41" cy="41" r="36" stroke="url(#coin)" stroke-width="1.5"/>
+  <circle cx="41" cy="41" r="28" fill="url(#globe)" stroke="#d7bb81" stroke-opacity=".28"/>
+  <path d="M22 43c11-8 26-9 40-3M31 22c-4 12-4 27 3 39M50 22c-6 10-7 25-2 38M17 40c13 3 30 1 48-5" stroke="#d2bc91" stroke-linecap="round" stroke-opacity=".6"/>
+  <path d="m52 13 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z" fill="#f3deae"/>
+  <path d="m20 58 2 4 4 2-4 2-2 4-2-4-4-2 4-2 2-4Z" fill="#d0aa69"/>
+  <text x="91" y="36" fill="#f5f0e5" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="3.3">КУПИ</text>
+  <text x="91" y="61" fill="#d5bc8d" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" letter-spacing="2.9">ВЕСЬ МИР</text>
+  <path d="M91 70h192" stroke="#d3b77f" stroke-opacity=".4"/>
+  <circle cx="290" cy="70" r="2" fill="#d3b77f"/>
+  <text x="299" y="73" fill="#858998" font-family="Segoe UI,Arial,sans-serif" font-size="7" letter-spacing="1.1">ОТ ПЕРВОЙ ПОКУПКИ ДО ГАЛАКТИКИ</text>
+</svg>

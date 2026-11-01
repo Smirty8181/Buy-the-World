@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="real-estate" viewBox="0 0 720 440">
+    <defs><linearGradient id="property-sky" x2="0" y2="1"><stop stop-color="#2c3b4e"/><stop offset="1" stop-color="#8f7770"/></linearGradient><linearGradient id="property-wall" x2="1" y2="1"><stop stop-color="#ede2cb"/><stop offset="1" stop-color="#b6a48a"/></linearGradient></defs>
+    <path fill="url(#property-sky)" d="M0 0h720v440H0z"/><circle cx="554" cy="95" r="39" fill="#e1c697" opacity=".8"/>
+    <path fill="#414b50" d="M0 270h720v170H0z"/><path fill="#303c40" d="M0 304c114-39 195 16 302-14s244-24 418 8v142H0z"/>
+    <path fill="#796858" d="M127 245 350 96l244 149v151H127z"/><path fill="url(#property-wall)" d="M156 242 350 114l213 128v154H156z"/>
+    <path fill="#34404d" d="M128 249 350 91l224 154v28L350 121 130 279z"/>
+    <path fill="#273340" d="M196 263h68v67h-68zm114-32h77v71h-77zm122 28h70v68h-70z"/><path fill="#d3b47d" d="M206 273h48v46h-48zm124-30h55v51h-55zm112 29h50v46h-50z"/>
+    <path fill="#8d6853" d="M310 324h82v72h-82z"/><path fill="#e9dcc3" d="M326 341h50v55h-50z"/><path fill="#9d755c" d="M33 380c30-67 57-95 79-82 21 12 25 48 9 82zm497 12c31-77 60-110 85-91 20 16 23 54 7 91z"/>
+    <path fill="#eee2c9" d="M39 401h51v-57H39zm538-3h47v-62h-47z" opacity=".72"/><path fill="#202c39" d="M0 395h720v45H0z"/>
+  </symbol>
+  <symbol id="transport" viewBox="0 0 720 440">
+    <defs><linearGradient id="car-sky" x2="0" y2="1"><stop stop-color="#33445b"/><stop offset="1" stop-color="#9c7d72"/></linearGradient><linearGradient id="car-body" x2="1" y2="1"><stop stop-color="#e6c692"/><stop offset=".55" stop-color="#bd9860"/><stop offset="1" stop-color="#715e51"/></linearGradient></defs>
+    <path fill="url(#car-sky)" d="M0 0h720v440H0z"/><circle cx="555" cy="103" r="42" fill="#f0d4a0" opacity=".7"/>
+    <path fill="#47525b" d="M0 274c120-68 191-22 298-53s254-22 422 19v200H0z"/><path fill="#262b31" d="M0 329h720v111H0z"/>
+    <path d="M121 293h478l55 73H65l34-58 22-15Z" fill="url(#car-body)"/><path fill="#a88a62" d="m190 291 56-77h202l100 77z"/><path fill="#344556" d="m207 284 48-57h83v57zm146 0v-57h78l71 57z"/><path fill="#ead7b4" d="M141 311h57v22h-57zm385 0h55v22h-55z" opacity=".9"/>
+    <path fill="#343437" d="M99 342h494v28H99z"/><circle cx="191" cy="366" r="48" fill="#171c23"/><circle cx="191" cy="366" r="24" fill="#a8a398"/><circle cx="191" cy="366" r="10" fill="#45484b"/><circle cx="498" cy="366" r="48" fill="#171c23"/><circle cx="498" cy="366" r="24" fill="#a8a398"/><circle cx="498" cy="366" r="10" fill="#45484b"/>
+    <path fill="#f0d8ad" d="M52 403h616v6H52z" opacity=".55"/>
+  </symbol>
+  <symbol id="luxury" viewBox="0 0 720 440">
+    <defs><linearGradient id="lux-box" x2="1" y2="1"><stop stop-color="#ebd39b"/><stop offset="1" stop-color="#8a643e"/></linearGradient><radialGradient id="lux-glow"><stop stop-color="#b79559" stop-opacity=".48"/><stop offset="1" stop-color="#252325" stop-opacity="0"/></radialGradient></defs>
+    <path fill="#24232a" d="M0 0h720v440H0z"/><ellipse cx="371" cy="328" rx="286" ry="101" fill="url(#lux-glow)"/>
+    <path fill="#483b36" d="M0 347h720v93H0z"/><path fill="#8a7057" d="M117 353h486v15H117z"/><path fill="#332b29" d="M139 368h14v65h-14zm426 0h14v65h-14z"/>
+    <path fill="url(#lux-box)" d="M260 146h195v170H260z"/><path fill="#f2dfa9" d="M249 139h217v23H249z"/><path fill="#c6a878" d="M280 167h154v130H280z"/><path fill="#f3e7c7" d="M293 181h128v103H293z"/>
+    <path d="m357 185 19 29 34 8-24 22 3 34-32-14-31 14 4-34-25-22 34-8 18-29Z" fill="#d4ae69"/><circle cx="356" cy="231" r="13" fill="#f7e6bd"/><circle cx="356" cy="231" r="7" fill="#8597a8"/>
+    <path fill="#d8c6a1" d="M311 308h92v12h-92z"/><path fill="#927b59" d="M299 319h116v9H299z"/>
+    <circle cx="162" cy="220" r="41" fill="#d5b474"/><circle cx="162" cy="220" r="31" fill="#272932"/><path d="M162 194v27l18 13" stroke="#f1dfb8" stroke-width="4" stroke-linecap="round"/><path d="M162 187v-11m0 88v-11m34-33h11m-90 0h11" stroke="#d3b778" stroke-width="5"/>
+    <path fill="#d6b77e" d="M524 253h53v70h-53z"/><path fill="#f1dfb8" d="M514 243h73v12h-73z"/>
+  </symbol>
+  <symbol id="business" viewBox="0 0 720 440">
+    <defs><linearGradient id="biz-sky" x2="0" y2="1"><stop stop-color="#33434a"/><stop offset="1" stop-color="#9c806c"/></linearGradient></defs>
+    <path fill="url(#biz-sky)" d="M0 0h720v440H0z"/><circle cx="535" cy="92" r="34" fill="#e7c797" opacity=".7"/>
+    <path fill="#323a3a" d="M0 277h720v163H0z"/><path fill="#dfcfac" d="M128 172h467v207H128z"/><path fill="#3a484a" d="M106 175h511v37H106z"/>
+    <path fill="#b28b5c" d="M145 149h435l28 28H117z"/><path fill="#d9b881" d="M150 140h421v12H150z"/>
+    <path fill="#3f514f" d="M156 232h115v112H156zm137 0h118v112H293zm139 0h107v112H432z"/><path fill="#e0bf83" d="M165 240h97v96h-97zm137 0h100v96H302zm139 0h90v96h-90z"/>
+    <path fill="#4a4134" d="M315 275h64v104h-64z"/><path fill="#e8d8ba" d="M326 287h42v92h-42z"/><circle cx="359" cy="332" r="3" fill="#b58a54"/>
+    <path fill="#293033" d="M71 287h44v92H71zm538 0h39v92h-39z"/><path fill="#d8bd8f" d="M0 377h720v63H0z"/><path fill="#60513e" d="M36 363h49v14H36zm596 0h47v14h-47z"/>
+    <path fill="#b48560" d="M46 239h62v19H46z"/><path fill="#eee1c8" d="M50 242h54v12H50z"/><text x="322" y="200" fill="#f3e4c6" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="5">КАПИТАЛ</text>
+  </symbol>
+  <symbol id="nature" viewBox="0 0 720 440">
+    <defs><linearGradient id="nature-sky" x2="0" y2="1"><stop stop-color="#495b63"/><stop offset=".65" stop-color="#c1aa84"/><stop offset="1" stop-color="#6c8c88"/></linearGradient></defs>
+    <path fill="url(#nature-sky)" d="M0 0h720v440H0z"/><circle cx="525" cy="103" r="45" fill="#efd5a1" opacity=".79"/>
+    <path fill="#697676" d="m0 293 132-126 103 83 126-148 138 152 108-111 113 124v173H0z"/><path fill="#d6c6a8" d="m298 250 63-148 61 79-33-10-24 25-21-9z"/>
+    <path fill="#627f79" d="M0 293c155-41 231 13 345-13s254-25 375 14v146H0z"/><path fill="#344d4c" d="M0 349c148-27 252 25 369 0s224-30 351 4v87H0z"/>
+    <path fill="#b4a07b" d="M61 357c90-15 148 24 247 26s170-16 260-4v16c-101-10-169 19-267 1S155 366 61 377z"/>
+    <path fill="#4f6454" d="M94 318c-20-39-16-75 7-104 23 30 26 66 8 104zm38-13c-22-45-17-87 12-122 27 37 29 80 7 122z"/><path fill="#8a9b79" d="M99 287c-11-31-8-51 2-72 12 25 13 49 6 74z"/>
+    <path fill="#5f725a" d="M610 336c-22-42-17-79 9-113 24 35 27 73 7 113zm29-14c-19-40-14-72 10-100 22 29 23 63 5 101z"/>
+    <path fill="#d7bd8a" d="M0 410h720v30H0z"/>
+  </symbol>
+  <symbol id="entertainment" viewBox="0 0 720 440">
+    <defs><linearGradient id="fun-sky" x2="0" y2="1"><stop stop-color="#33324b"/><stop offset="1" stop-color="#b27c72"/></linearGradient></defs>
+    <path fill="url(#fun-sky)" d="M0 0h720v440H0z"/><circle cx="558" cy="83" r="39" fill="#efcf9d" opacity=".8"/>
+    <path fill="#252735" d="M0 300h720v140H0z"/><path fill="#553d48" d="M101 199h518v177H101z"/><path fill="#c79873" d="M83 183h550v34H83z"/><path fill="#332c3d" d="M126 227h465v145H126z"/>
+    <path fill="#dcbd85" d="M215 263h288v109H215z"/><path fill="#353144" d="M233 278h252v94H233z"/><path fill="#d7b681" d="M188 242h340v21H188z"/>
+    <path fill="#e0c698" d="M240 281h7v91h-7zm48 0h7v91h-7zm48 0h7v91h-7zm48 0h7v91h-7zm48 0h7v91h-7zm48 0h7v91h-7z"/>
+    <circle cx="353" cy="119" r="88" fill="#d5b17b" fill-opacity=".08" stroke="#e5c28c" stroke-width="4"/><circle cx="353" cy="119" r="70" fill="none" stroke="#e5c28c" stroke-opacity=".55" stroke-width="2"/>
+    <path fill="#e7c998" d="M350 33h6v16h-6zm0 156h6v16h-6zm-86-73h16v6h-16zm156 0h16v6h-16zm-131-57 11 11-4 4-11-11zm110 110 11 11-4 4-11-11zm11-110-11 11 4 4 11-11zm-110 110-11 11 4 4 11-11z"/>
+    <path fill="#d4a878" d="M104 373h512v12H104z"/><path fill="#9c725e" d="m53 390 67-10v18l-67 8zm547 0 68 8v-18l-68-10z"/>
+  </symbol>
+  <symbol id="cities" viewBox="0 0 720 440">
+    <defs><linearGradient id="city-sky" x2="0" y2="1"><stop stop-color="#303e54"/><stop offset="1" stop-color="#bc9078"/></linearGradient></defs>
+    <path fill="url(#city-sky)" d="M0 0h720v440H0z"/><circle cx="547" cy="91" r="41" fill="#ebcf9c" opacity=".77"/>
+    <path fill="#33394a" d="M0 247h93V128h79v77h77V99h101v153h68V147h91v103h68V81h83v186h60v166H0z"/>
+    <path fill="#465060" d="M16 270h57v-94h57v94h51v-75h62v75h57V139h60v131h48v-93h56v93h51V159h56v111h43V111h47v159h50v136H16z"/>
+    <path fill="#d6b87e" d="M34 195h11v18H34zm28 0h11v18H62zm75-42h12v17h-12zm29 42h12v18h-12zm77 21h12v17h-12zm31 0h12v17h-12zm76-52h13v18h-13zm29 0h13v18h-13zm88 47h12v18h-12zm29 0h12v18h-12zm77-38h12v18h-12zm27 0h12v18h-12z"/>
+    <path fill="#222b37" d="M0 370h720v70H0z"/><path fill="#69717a" d="M118 267v173m149-304v304m167-213v213m157-121v121" stroke="#69717a" stroke-width="3"/>
+    <path d="M28 331h664" stroke="#d5b781" stroke-opacity=".55" stroke-width="2"/><circle cx="347" cy="331" r="10" fill="#f0d8aa"/>
+  </symbol>
+  <symbol id="states" viewBox="0 0 720 440">
+    <defs><linearGradient id="state-sky" x2="0" y2="1"><stop stop-color="#344255"/><stop offset="1" stop-color="#b08a75"/></linearGradient></defs>
+    <path fill="url(#state-sky)" d="M0 0h720v440H0z"/><circle cx="560" cy="85" r="39" fill="#ebd09f" opacity=".7"/>
+    <path fill="#34403f" d="M0 284c105-31 151 12 255-15s185-11 278 13 113-11 187-20v178H0z"/><path fill="#665f50" d="M0 333c139-32 233 16 368-4s230-19 352 11v100H0z"/>
+    <path fill="#d7c6a5" d="M262 158h198v202H262z"/><path fill="#49505a" d="M231 145h259v31H231z"/><path fill="#d7c6a5" d="M290 104h141v41H290z"/><path fill="#49505a" d="M277 92h167v16H277z"/>
+    <path fill="#bda781" d="M338 78h48v15h-48z"/><path fill="#424b55" d="M350 59h24v20h-24z"/>
+    <path fill="#38434d" d="M280 198h54v62h-54zm108 0h54v62h-54zm-108 86h54v60h-54zm108 0h54v60h-54z"/><path fill="#d9bd83" d="M290 207h34v42h-34zm108 0h34v42h-34zm-108 86h34v40h-34zm108 0h34v40h-34z"/>
+    <path fill="#43505a" d="M156 248h74v120h-74zm258-6h139v126H414z"/><path fill="#d6c5a5" d="M173 267h40v80h-40zm258-1h103v89H431z"/>
+    <path fill="#28343d" d="M301 332h122v62H301z"/><path fill="#e4d4b7" d="M317 348h90v46h-90z"/><path fill="#292f36" d="M342 348h40v46h-40z"/>
+  </symbol>
+  <symbol id="space" viewBox="0 0 720 440">
+    <defs><linearGradient id="space-sky" x2="1" y2="1"><stop stop-color="#151e32"/><stop offset="1" stop-color="#543e52"/></linearGradient><linearGradient id="rocket" x2="1" y2="1"><stop stop-color="#f0e4cc"/><stop offset="1" stop-color="#9fa8b2"/></linearGradient></defs>
+    <path fill="url(#space-sky)" d="M0 0h720v440H0z"/><circle cx="118" cy="76" r="2" fill="#f4e3bf"/><circle cx="567" cy="73" r="3" fill="#e8d2a7"/><circle cx="621" cy="178" r="2" fill="#f4e3bf"/><circle cx="232" cy="114" r="2" fill="#f4e3bf"/><circle cx="434" cy="54" r="2" fill="#f4e3bf"/>
+    <circle cx="558" cy="290" r="123" fill="#7e6f8e"/><path fill="#b39a9c" d="M453 241c33-34 75-36 104-2 22 27 49 26 81 5-6 39-41 57-76 43-34-14-45-35-80-21-21 8-29 1-29-25Z"/><ellipse cx="557" cy="299" rx="159" ry="37" fill="none" stroke="#d3bc98" stroke-width="4" transform="rotate(-16 557 299)"/>
+    <path fill="url(#rocket)" d="M294 70c79 60 99 154 34 232-20 23-45 44-74 62 18-40 22-69 8-94-48-73-28-139 32-200Z"/><path fill="#374554" d="m305 138 66 67-43 46-68-66z"/><circle cx="315" cy="187" r="18" fill="#f2d29a" stroke="#556071" stroke-width="7"/>
+    <path fill="#d1a96f" d="m278 266 50 48-66 37 16-85zm75 22 39 36-67 37 28-73z"/><path fill="#e9b579" d="M254 348c-6 31-20 56-43 78 39-14 68-34 86-65z"/><path fill="#edce9a" d="M278 362c-1 22-7 40-20 57 29-14 48-34 59-58z"/>
+    <circle cx="165" cy="327" r="45" fill="#27384a"/><circle cx="165" cy="327" r="55" fill="none" stroke="#9e8e83" stroke-width="2"/><path fill="#c5b89f" d="M136 313c12-17 25-16 35-5l-11 19 14 12-20 19-19-13 9-18z"/>
+  </symbol>
+  <symbol id="planets" viewBox="0 0 720 440">
+    <defs><radialGradient id="planet"><stop stop-color="#e1b788"/><stop offset=".68" stop-color="#ae7769"/><stop offset="1" stop-color="#55475d"/></radialGradient><linearGradient id="planet-sky" x2="1" y2="1"><stop stop-color="#171d30"/><stop offset="1" stop-color="#433a51"/></linearGradient></defs>
+    <path fill="url(#planet-sky)" d="M0 0h720v440H0z"/><circle cx="107" cy="97" r="3" fill="#f0dbb3"/><circle cx="207" cy="68" r="2" fill="#f0dbb3"/><circle cx="604" cy="92" r="3" fill="#f0dbb3"/><circle cx="548" cy="349" r="2" fill="#f0dbb3"/><circle cx="133" cy="333" r="2" fill="#f0dbb3"/>
+    <circle cx="363" cy="216" r="143" fill="url(#planet)"/><path fill="#e3c39c" d="M254 145c35-30 70-18 83 10s39 29 68 10 60-9 76 25c-32 4-47 21-65 41-24 26-49 14-67-11-17-23-44-31-73-20-23 9-38-18-22-55Z" opacity=".72"/>
+    <path fill="#9d6c67" d="M249 223c39-23 73-16 98 15 27 34 53 31 79 4s56-27 90-7c-5 47-46 78-86 66-33-9-42-35-71-43-31-8-61 16-97 5-25-8-30-20-13-40Z"/>
+    <ellipse cx="361" cy="218" rx="205" ry="49" transform="rotate(-15 361 218)" fill="none" stroke="#e4cfaa" stroke-opacity=".75" stroke-width="4"/><ellipse cx="361" cy="218" rx="207" ry="52" transform="rotate(-15 361 218)" fill="none" stroke="#b09a80" stroke-opacity=".45" stroke-width="10"/>
+    <circle cx="540" cy="156" r="24" fill="#82929d"/><path fill="#c6c1ab" d="m521 147 17-11 16 12-7 22-21 4-11-15z"/><circle cx="180" cy="290" r="15" fill="#b0a7a5"/>
+  </symbol>
+  <symbol id="cosmic-objects" viewBox="0 0 720 440">
+    <defs><linearGradient id="nebula" x2="1" y2="1"><stop stop-color="#202039"/><stop offset=".5" stop-color="#66506b"/><stop offset="1" stop-color="#243b50"/></linearGradient><radialGradient id="star"><stop stop-color="#fff5ce"/><stop offset=".2" stop-color="#f0cf96"/><stop offset="1" stop-color="#c88978" stop-opacity="0"/></radialGradient></defs>
+    <path fill="#171b2c" d="M0 0h720v440H0z"/><ellipse cx="354" cy="222" rx="290" ry="146" fill="url(#nebula)" opacity=".8" transform="rotate(-17 354 222)"/><ellipse cx="361" cy="219" rx="213" ry="92" fill="none" stroke="#c6a784" stroke-opacity=".45" stroke-width="2" transform="rotate(-17 361 219)"/>
+    <circle cx="358" cy="216" r="57" fill="url(#star)"/><circle cx="358" cy="216" r="13" fill="#ffe5ae"/>
+    <path fill="#c3a9ba" d="M137 142c49-43 108-49 141-17-49 3-70 31-84 56-18 31-51 39-76 19 30-12 40-31 19-58Z" opacity=".75"/><path fill="#8eabc0" d="M474 270c51-39 104-40 136-9-52 2-67 33-85 58-19 29-48 38-79 15 29-11 47-35 28-64Z" opacity=".78"/>
+    <circle cx="198" cy="264" r="8" fill="#c7a77b"/><circle cx="513" cy="143" r="11" fill="#b8a1b7"/><circle cx="599" cy="199" r="5" fill="#d4bf96"/><circle cx="276" cy="102" r="4" fill="#ead8b8"/>
+    <circle cx="94" cy="83" r="2" fill="#fff1d2"/><circle cx="620" cy="88" r="2" fill="#fff1d2"/><circle cx="94" cy="334" r="3" fill="#fff1d2"/><circle cx="600" cy="345" r="2" fill="#fff1d2"/>
+    <path d="m358 165 13 43 44 8-44 10-13 45-11-45-46-10 46-8 11-43Z" fill="#f2d4a1" fill-opacity=".45"/>
+  </symbol>
+  <symbol id="universe" viewBox="0 0 720 440">
+    <defs><radialGradient id="uni-glow"><stop stop-color="#dfbb89" stop-opacity=".8"/><stop offset=".2" stop-color="#a8808e" stop-opacity=".45"/><stop offset="1" stop-color="#171b30" stop-opacity="0"/></radialGradient><linearGradient id="uni-sky" x2="1" y2="1"><stop stop-color="#141a2b"/><stop offset=".55" stop-color="#302841"/><stop offset="1" stop-color="#182a38"/></linearGradient></defs>
+    <path fill="url(#uni-sky)" d="M0 0h720v440H0z"/><ellipse cx="362" cy="214" rx="300" ry="174" fill="url(#uni-glow)"/>
+    <ellipse cx="365" cy="214" rx="244" ry="103" transform="rotate(-16 365 214)" fill="none" stroke="#d2ae84" stroke-opacity=".48" stroke-width="2"/><ellipse cx="361" cy="220" rx="171" ry="63" transform="rotate(22 361 220)" fill="none" stroke="#b997ad" stroke-opacity=".55" stroke-width="2"/><ellipse cx="361" cy="220" rx="115" ry="177" transform="rotate(58 361 220)" fill="none" stroke="#94a7ba" stroke-opacity=".34" stroke-width="2"/>
+    <circle cx="357" cy="218" r="40" fill="#e4c28e"/><circle cx="357" cy="218" r="31" fill="#293047"/><circle cx="347" cy="206" r="8" fill="#d4a883"/><circle cx="371" cy="229" r="11" fill="#a88896"/><circle cx="364" cy="195" r="5" fill="#e5d1a7"/>
+    <circle cx="151" cy="153" r="11" fill="#b8a1aa"/><circle cx="569" cy="271" r="13" fill="#879bad"/><circle cx="263" cy="355" r="8" fill="#d1b582"/><circle cx="483" cy="105" r="9" fill="#d6bc8c"/>
+    <circle cx="73" cy="72" r="2" fill="#f1debb"/><circle cx="625" cy="75" r="2" fill="#f1debb"/><circle cx="661" cy="336" r="3" fill="#f1debb"/><circle cx="90" cy="365" r="2" fill="#f1debb"/><circle cx="228" cy="88" r="2" fill="#f1debb"/>
+    <path d="m358 184 8 25 27 9-27 8-8 27-9-27-25-8 25-9 9-25Z" fill="#f4d8a7" fill-opacity=".62"/>
+  </symbol>
+</svg>
