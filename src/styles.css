@@ -1116,11 +1116,13 @@ h3 {
 .asset-card:hover .asset-scene {
   transform: scale(1.055);
 }
-.asset-art::after {
+.asset-art .scene-artwork {
   position: absolute;
-  inset: 32% 0 0;
-  background: linear-gradient(transparent, rgba(10, 14, 20, 0.52));
-  content: "";
+  inset: 0;
+}
+
+.asset-art::after {
+  content: none;
 }
 .asset-art-no {
   position: absolute;
@@ -3861,5 +3863,180 @@ body {
 
   .investment-actions > button {
     flex: 1 1 auto;
+  }
+}
+
+.asset-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.asset-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--border));
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+  transform: translateY(-3px);
+}
+
+.asset-art {
+  height: 174px;
+}
+
+.asset-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.asset-title-row h3 {
+  font-size: 14px;
+}
+
+.asset-description {
+  min-height: 30px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.asset-ownership {
+  font-size: 10px;
+}
+
+.asset-economy {
+  margin-top: auto;
+  gap: 8px;
+}
+
+.asset-economy span {
+  font-size: 8px;
+  letter-spacing: 0.35px;
+}
+
+.asset-economy strong {
+  font-size: 11px;
+}
+
+.buy-button {
+  min-height: 40px;
+  margin-top: 12px;
+  padding: 0 12px;
+  font-size: 11px;
+}
+
+.buy-button strong {
+  font-size: 11px;
+}
+
+.asset-rarity {
+  bottom: 10px;
+  left: 12px;
+  padding: 4px 7px;
+  font-size: 9px;
+}
+
+.metric-card {
+  min-height: 153px;
+  padding: 19px;
+  border-radius: 9px;
+}
+
+.metric-value {
+  margin-top: 16px;
+  font-size: clamp(24px, 2.6vw, 32px);
+}
+
+.metric-caption,
+.page-intro {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.eyebrow {
+  font-size: 10px;
+}
+
+.primary-button,
+.outline-button {
+  min-height: 42px;
+  padding: 0 17px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.category-card {
+  min-height: 146px;
+  border-radius: 8px;
+}
+
+.category-name {
+  font-size: 12px;
+}
+
+.category-state {
+  font-size: 9px;
+}
+
+.goal-card,
+.event-card {
+  border-radius: 9px;
+}
+
+.goal-content > div:first-child > p,
+.market-event p {
+  font-size: 12px;
+}
+
+.goal-price-row,
+.goal-progress-copy {
+  font-size: 11px;
+}
+
+.market-event h3 {
+  font-size: 14px;
+}
+
+.collection-card,
+.investment-card,
+.settings-panel {
+  border-radius: 10px;
+}
+
+.news-card,
+.achievement-card,
+.statistics-card,
+.statistics-panel {
+  border-radius: 9px;
+}
+
+@media (max-width: 760px) {
+  .asset-art {
+    height: 205px;
+  }
+
+  .metric-card {
+    min-height: 148px;
+  }
+}
+
+@media (max-width: 600px) {
+  .asset-art {
+    height: 218px;
+  }
+
+  .asset-card-content {
+    padding: 14px;
+  }
+
+  .category-card {
+    min-height: 130px;
+  }
+
+  .scene-artwork-title {
+    font-size: 13px;
   }
 }

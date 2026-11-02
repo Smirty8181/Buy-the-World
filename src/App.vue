@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from "vue";
+import AssetArtwork from "./components/AssetArtwork.vue";
 import { assetCollections } from "./domain/collections";
 import { formatCurrency } from "./domain/currency";
 import { getMarketPrice } from "./domain/investments";
@@ -19,6 +20,7 @@ type SectionId =
 type CatalogFilter = "all" | "favorites" | "wishlist";
 
 const game = useGameStore();
+const baseUrl = import.meta.env.BASE_URL;
 const section = ref<SectionId>("overview");
 const selectedCategory = ref("real-estate");
 const catalogFilter = ref<CatalogFilter>("all");
@@ -396,6 +398,11 @@ function getCategoryScene(categoryId: string): string {
   );
 }
 
+function getAssetArtworkVariation(assetId: string): number {
+  const serial = Number(assetId.match(/\d+$/)?.[0] ?? 1);
+  return (serial - 1) % 6;
+}
+
 function isCategoryUnlocked(categoryId: string): boolean {
   const category = game.categories.find((entry) => entry.id === categoryId);
   return Boolean(category && game.netWorth >= category.unlockAt);
@@ -506,7 +513,7 @@ onUnmounted(() => {
       >
         <img
           class="brand-logo"
-          src="/images/brand.svg"
+          :src="`${baseUrl}images/brand.svg`"
           alt="Купи весь мир"
           width="180"
           height="42"
@@ -531,7 +538,7 @@ onUnmounted(() => {
           "
         >
           <svg class="nav-icon" aria-hidden="true">
-            <use :href="`/images/category-icons.svg#${item.icon}`" />
+            <use :href="`${baseUrl}images/category-icons.svg#${item.icon}`" />
           </svg>
           <span>{{ item.label }}</span>
           <span
@@ -569,7 +576,7 @@ onUnmounted(() => {
             "
           >
             <svg class="nav-icon" aria-hidden="true">
-              <use :href="`/images/category-icons.svg#${item.icon}`" />
+              <use :href="`${baseUrl}images/category-icons.svg#${item.icon}`" />
             </svg>
             <span>{{ item.label }}</span>
           </button>
@@ -796,22 +803,16 @@ onUnmounted(() => {
                   </button>
                 </div>
               </div>
-              <div
+              <AssetArtwork
                 class="goal-art"
-                :data-category="nextGoal.categoryId"
-                role="img"
-                :aria-label="`Иллюстрация: ${nextGoal.name}`"
-              >
-                <svg class="goal-scene" aria-hidden="true">
-                  <use
-                    :href="`/images/category-scenes.svg#${getCategoryScene(nextGoal.categoryId)}`"
-                  />
-                </svg>
-                <span class="goal-art-caption"
-                  >ТВОЁ БУДУЩЕЕ · ЭТАП
-                  {{ String(nextGoalStage).padStart(2, "0") }}</span
-                >
-              </div>
+                presentation="goal"
+                :scene-id="getCategoryScene(nextGoal.categoryId)"
+                :category-id="nextGoal.categoryId"
+                :category-icon="getCategoryIcon(nextGoal.categoryId)"
+                :title="nextGoal.name"
+                :label="`ЭТАП ${String(nextGoalStage).padStart(2, '0')}`"
+                :variant="getAssetArtworkVariation(nextGoal.id)"
+              />
             </div>
           </article>
 
@@ -940,13 +941,16 @@ onUnmounted(() => {
             :disabled="!isCategoryUnlocked(category.id)"
             @click="openStore(category.id)"
           >
-            <span class="category-art">
-              <svg class="category-scene" aria-hidden="true">
-                <use :href="`/images/category-scenes.svg#${category.image}`" />
-              </svg>
-            </span>
+            <AssetArtwork
+              class="category-art"
+              presentation="category"
+              :scene-id="category.image"
+              :category-id="category.id"
+              :category-icon="category.icon"
+              :title="category.name"
+            />
             <svg class="category-icon" aria-hidden="true">
-              <use :href="`/images/category-icons.svg#${category.icon}`" />
+              <use :href="`${baseUrl}images/category-icons.svg#${category.icon}`" />
             </svg>
             <span class="category-name">{{ category.name }}</span>
             <span class="category-state">{{
@@ -1049,7 +1053,7 @@ onUnmounted(() => {
             @click="selectedCategory = category.id"
           >
             <svg class="category-tab-icon" aria-hidden="true">
-              <use :href="`/images/category-icons.svg#${category.icon}`" />
+              <use :href="`${baseUrl}images/category-icons.svg#${category.icon}`" />
             </svg>
             {{ category.name
             }}<span v-if="!isCategoryUnlocked(category.id)" class="lock-mark"
@@ -1124,15 +1128,16 @@ onUnmounted(() => {
             :style="{ '--card-index': index }"
           >
             <div class="asset-art" :data-category="asset.categoryId">
-              <svg class="asset-scene" aria-hidden="true">
-                <use
-                  :href="`/images/category-scenes.svg#${getCategoryScene(asset.categoryId)}`"
-                />
-              </svg>
-              <span class="asset-art-no">{{
-                String(index + 1).padStart(2, "0")
-              }}</span
-              ><button
+              <AssetArtwork
+                presentation="asset"
+                :scene-id="getCategoryScene(asset.categoryId)"
+                :category-id="asset.categoryId"
+                :category-icon="getCategoryIcon(asset.categoryId)"
+                :title="asset.name"
+                :label="`ОБЪЕКТ ${String(index + 1).padStart(2, '0')}`"
+                :variant="getAssetArtworkVariation(asset.id)"
+              />
+              <button
                 class="favorite-button"
                 :aria-label="
                   game.save.favorites.includes(asset.id)
@@ -1284,7 +1289,7 @@ onUnmounted(() => {
             <div class="empire-asset-icon" :data-category="asset.categoryId">
               <svg aria-hidden="true">
                 <use
-                  :href="`/images/category-icons.svg#${getCategoryIcon(asset.categoryId)}`"
+                  :href="`${baseUrl}images/category-icons.svg#${getCategoryIcon(asset.categoryId)}`"
                 />
               </svg>
             </div>
@@ -1483,7 +1488,7 @@ onUnmounted(() => {
                   <span class="breakdown-category">
                     <svg aria-hidden="true">
                       <use
-                        :href="`/images/category-icons.svg#${category.icon}`"
+                        :href="`${baseUrl}images/category-icons.svg#${category.icon}`"
                       />
                     </svg>
                     {{ category.name }}
@@ -1778,7 +1783,7 @@ onUnmounted(() => {
             <div class="news-icon">
               <svg aria-hidden="true">
                 <use
-                  :href="`/images/category-icons.svg#${story.categoryId ? getCategoryIcon(story.categoryId) : 'news'}`"
+                  :href="`${baseUrl}images/category-icons.svg#${story.categoryId ? getCategoryIcon(story.categoryId) : 'news'}`"
                 />
               </svg>
             </div>
